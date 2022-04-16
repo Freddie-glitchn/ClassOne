@@ -1,12 +1,13 @@
 fun main() {
-    var calories = 500
+    val myAge = 32
+    val yourAge = 32
 
-    if (calories > 2000){
-        println("That's enough calories for today")
-    }else if(calories < 2000 && calories > 1000){
-        println("Keep eat'n you are almost there")
-    }else if(calories < 1000){
-        println("That's dangerous! eat like there's no tomorrow")
+    val myName = "John"
+    val yourName= "Monica"
+
+    if ((myAge != yourAge) || (myName != yourName)){
+        println("Both are true")
+    }else{
+        println("one of your details are same as mine")
     }
-    println("Hello There")
 }
