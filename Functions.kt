@@ -31,3 +31,11 @@ fun helloWorld():String{
     return "Hello World"
 }
 fun alsoLikeThis() = println("No way! This also works")
+
+fun dowork(miaka:Int){
+    if (miaka < 21) {
+        println("You are not old enough. you are $miaka years old")
+    }else{
+        println("You are at the ripe age of $miaka")
+    }
+}
