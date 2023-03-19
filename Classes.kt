@@ -1,34 +1,17 @@
-fun main(){
-    var user = user()
-    user.fname = "Mercy"
-    user.lname = "Muthoka"
-    user.printName()
-    user.UpdateName("Mathew")
-    user.printName()
-    user.printWithprefix("Mr.")
 
-    var friend = user()
-    friend.fname = "Daniel"
-    friend.lname = "Kipchirchir"
-    friend.printName()
-    friend.updateName("Kyalo")
-    friend.printName()
-    friend.printWithprefix("Mr.")
-}
-class user{
-    var fname = ""
-    var lname = ""
 
-    fun printName(){
-        println("$fname $lname")
-    }
-    fun printWithprefix(prefix:String){
-        println("$prefix $fname $lname")
-    }
-    fun UpdateName(newName:String){
-        fname = newName
-    }
-    fun updateName(newName:String){
-        lname = newName
-    }
+
+fun main()
+{
+    val person = PersonClass() //("Fred", " Ng'ara", 27, "3900 Moi University", "Moi University")
+    //accessing personclass properties without the need of getters
+    person.age
+    person.pAddress
+    person.firstName
+    person.school
+
+    val pClass2 = personClass2()
+    pClass2.nickName = "Ngizi"
+    pClass2.nickName = "New Nickname"
+    println(pClass2.nickName)
 }
